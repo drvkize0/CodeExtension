@@ -1,0 +1,41 @@
+{
+  "name": "extension",
+  "displayName": "alchemy-editor",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "composite": true,
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "alchemy.new-document",
+        "title": "Alchemy New Document"
+      }
+    ]
+  }, 
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "graph-editor": "^1.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/node": "22.7.9",
+    "@types/vscode": "1.94.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-static-copy": "^2.0.0",
+    "vscode-test": "^1.6.0"
+  },
+  "files": {
+
+  }
+}
